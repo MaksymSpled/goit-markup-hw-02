@@ -5,21 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
     <body>
-        <header>
-            <nav>
-                <a href="/">
+        <header class="header">
+            <nav class="navigation">
+                <a class=" logo link" href="/">
                     WebStudio
                 </a>  
-                <ul>
-                    <li><a href="">Студия</a></li>
-                    <li><a href="">Портфолио</a></li>
-                    <li><a href="">Контакты</a></li>
+                <ul class="nav-list list">
+                    <li class="nav-list-item">
+                        <a  class="nav-list-link link" href="">
+                            Студия
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a  class="nav-list-link link" href="">
+                            Портфолио
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a  class="nav-list-link link"href="">
+                            Контакты
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="modal-btn link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact-number link" href="tel:+380961111111">+38 096 111 11 11</a>
         </header>
         <main>
             <div>
@@ -30,7 +48,7 @@
             </div>
             <section>
                 <h2 lang="en" hidden>peculiarities</h2>
-                <ul>
+                <ul class="list">
                     <li>
                         <h3>Внимание к деталям</h3>
                         <p>
@@ -57,7 +75,7 @@
             </section>
             <section>
                 <h2>Чем мы занимаемся</h2>
-                <ul>
+                <ul class="list">
                     <li>
                         <img src="./images/dektop-app.jpg" alt="приложене для ПК" width="370">
                     </li>
@@ -71,7 +89,7 @@
             </section>
             <section>
                 <h2>Наша команда</h2>
-                <ul>
+                <ul class="list">
                     <li>
                         <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270">
                         <h3>Игорь Демьяненко</h3>
@@ -97,13 +115,13 @@
         </main>
         <footer>
             <h2 hidden>Контактная инофрмация</h2>
-            <a href="">
+            <a class="link" href="">
                 WebStudio
             </a>
             <address>
-                <ul>
+                <ul class="list">
                     <li>
-                        <a 
+                        <a class="link" 
                             href="https://goo.gl/maps/B2JfurvAVLo2SMsa9"
                             target="_blank"
                             rel="noopener noreferer">
@@ -111,10 +129,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a class="link" href="mailto:info@example.com">info@example.com</a>
                     </li>
                     <li>
-                        <a href="tel:+380991111111">+38 099 111 11 11</a>
+                        <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </address>

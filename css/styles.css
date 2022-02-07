@@ -1,0 +1,52 @@
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav-list-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+    color: #2196F3;
+}
+
+.modal-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14x;
+    letter-spacing: 0.02em;
+    
+    color: #757575;;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    color: #2196F3;
+}
+
+.contact-number {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.contact-number:hover,
+.contact-number:focus {
+    color: #2196F3;
+}
