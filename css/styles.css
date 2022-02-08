@@ -1,17 +1,24 @@
-:root {
---accent-color: #2196F3;
---logo-color: #2196F3;
---dark-head-color: #212121;
---dark-text-color: #757575;
---light-text-color: #fff;
---footer-contact-color: rgba(255, 255, 255, 0.6);
---primery-font-family: font-family: 'Roboto', sans-serif;
---logo-font-family: font-family: 'Raleway', sans-serif;
-}
+/* основной цвет заголовков #212121 */
+/* основной цвет параграфов #757575 */
+/* цвет контактов хедер #757575 */
+/* цвет ховер и фокус контактов хедер #2196F3 */
+/* цвет клавиш навигации #212121 */
+/* цвет ховер и фокус клавиш навигации #2196F3 */
+/* цвет главного заголовка #FFFFFF */
+/* цвет текста клавиши заказать услугу #FFFFFF */
+/* цвет фона клавиши заказать услугу #2196F3 */
+/* цвет фона ховер и фокус клавиши заказать услугу #188CE8 */
+/* цвет ссылки адресс в футере #FFFFFF */
+/* цвет контактов футер #FFFFFF99 */
+/* цвет ховер и фокус контактов футер #2196F3 */
+/* цвет фона основной #F5F4FA */
+/* цвет фона хедер #FFFFFF */
+/* Цвет фона вторичный #2F303A */
+/* цвет фона футер #2F303A */
 
-body {
-    font-family: var(--primery-font-family);
-}
+:root {
+    --accent-color: #2196F3;
+}  
 
 .list {
     list-style: none;
@@ -21,73 +28,51 @@ body {
     text-decoration: none;
 }
 
-/* ====== start header ===== */
+.body {
+    background-color: #F5F4FA;
+    color: #757575;
+    font-family: Roboto, sans-serif;
+}
 
 .logo {
-    font-family: var(--logo-font-family);
-    font-weight: bold;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 
-    color: var(--logo-color);
-
-}
-
-.nav-list-link {
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: var(--dark-head-color);
-}
-
-.nav-list-link:hover,
-.nav-list-link:focus {
     color: var(--accent-color);
 }
 
-.mail-btn {
-    font-family: var(--primery-font-family);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    
-    color: var(--dark-text-color);;
+.header-logo {
+    color: #212121;
 }
 
-.mail-btn:hover,
-.mail-btn:focus {
-    color: var(--accent-color);
+.site-nav .link {
+    color: #212121;
 }
 
-.contact-number {
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: var(--dark-text-color);
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color:  var(--accent-color);
 }
 
-.contact-number:hover,
-.contact-number:focus {
-    color: var(--accent-color);
+.contact-header {
+    color: #757575;
 }
 
-/* ====== end header ===== */
-
-/* ====== start main ===== */
+.contact-header:hover,
+.contact-header:focus {
+    color:  var(--accent-color);
+}
 
 .hero {
-    background-color: 2F303A;
+    background-color: #2F303A;
 }
 
 .main-title {
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -96,13 +81,13 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    /* color: var(--light-text-color); */
+    color: #FFFFFF;
 }
 
 .main-order-btn {
     font-family: inherit;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     
@@ -112,116 +97,83 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
 
-    color: var(--light-text-color);
-    background-color: #2F303A;
+    color:#FFFFFF;
+    background-color:  var(--accent-color);
 }
 
 .main-order-btn:hover,
 .main-order-btn:focus {
-    color: var(--light-text-color);
-    background-color: #2196F3;
+    color:#FFFFFF;
+    background-color: #188CE8;
 }
 
-.peculiarities-item-list {
+.head-description {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+}
+
+.item {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
         
-    color: var(--dark-head-color);
+    color: #212121;
 }
 
-.peculiarities-item-description {
+.description {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 
     letter-spacing: 0.03em;
-
-    color: var(--dark-text-color);
 }
 
-.head-description {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    
-    color: var(--dark-head-color);
+/* start footer */
+
+.footer {
+    background-color: #2F303A;
 }
 
-.team-member-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-        
-    text-align: center;
-    letter-spacing: 0.03em;
-    
-    color: var(--dark-head-color);
+.footer-logo {
+    color: #ffffff;
 }
-
-.team-member-position {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.19;
-    
-    text-align: center;
-    letter-spacing: 0.03em;
-    
-    color: var(--dark-text-color);
-}
-
-/* ====== end main ===== */
-
-/* ====== start footer ===== */
 
 .contact-list-location {
-    font-family: inherit;
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
 
     letter-spacing: 0.03em;
 
-    /* color:  var(--light-text-color); */
+    color: #ffffff;
 }
 
 .contact-list-location:hover,
 .contact-list-location:focus {
-    color: var(--accent-color);
+    color:  var(--accent-color);
 }
 
-.contact-list-mail {
-    font-weight: normal;
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 1.71;
-
-    letter-spacing: 0.03em;
-
-    /* color: var(--footer-contact-color); */
-}
-
-.contact-list-mail:hover,
-.contact-list-mail:focus {
-    color: var(--accent-color);
-}
-
-.contact-list-number {
-    font-family: inherit;
+.contact-footer {
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-
+    
     letter-spacing: 0.03em;
 
-    /* color: var(--footer-contact-color); */
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-list-number:hover,
-.contact-list-number:focus {
-    color: var(--accent-color);
+.contact-footer:hover,
+.contact-footer:focus {
+    color:  var(--accent-color);
 }
-/* ====== end footer ===== */
+
