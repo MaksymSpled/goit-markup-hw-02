@@ -18,6 +18,15 @@
 
 :root {
     --accent-color: #2196F3;
+    --main-text-color: #212121;
+    --other-bg-color: #2F303A;
+    --main-bg-color: #757575;
+    --header-bg-color: #ffffff;
+    --main-logo-color: #2196F3;
+    --header-logo-color: #212121;
+    --footer-logo-color: #ffffff; 
+    --main-font-family: Roboto, sans-serif;
+    --logo-font-family: Raleway, sans-serif;
 }  
 
 .list {
@@ -30,27 +39,30 @@
 
 .body {
     background-color: #F5F4FA;
-    color: #757575;
-    font-family: Roboto, sans-serif;
+    color: var(--main-bg-color);
+    font-family: var(--main-font-family);
 }
 
+.header {
+    background-color: var(--header-bg-color);
+}
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: var(--logo-font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 
-    color: var(--accent-color);
+    color: var(--main-logo-color);
 }
 
 .header-logo {
-    color: #212121;
+    color: var(--header-logo-color);
 }
 
 .site-nav .link {
-    color: #212121;
+    color: var(--main-text-color);
 }
 
 .site-nav .link:hover,
@@ -59,7 +71,7 @@
 }
 
 .contact-header {
-    color: #757575;
+    color: inherit;
 }
 
 .contact-header:hover,
@@ -68,7 +80,7 @@
 }
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--other-bg-color);
 }
 
 .main-title {
@@ -114,7 +126,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     
-    color: #212121;
+    color: var(--main-text-color);
 }
 
 .item {
@@ -124,11 +136,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
         
-    color: #212121;
+    color: var(--main-text-color);
 }
 
 .description {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 
@@ -138,11 +149,11 @@
 /* start footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--other-bg-color);
 }
 
 .footer-logo {
-    color: #ffffff;
+    color: var(--footer-logo-color);
 }
 
 .contact-list-location {
