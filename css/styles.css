@@ -1,3 +1,18 @@
+:root {
+--accent-color: #2196F3;
+--logo-color: #2196F3;
+--dark-head-color: #212121;
+--dark-text-color: #757575;
+--light-text-color: #fff;
+--footer-contact-color: rgba(255, 255, 255, 0.6);
+--primery-font-family: font-family: 'Roboto', sans-serif;
+--logo-font-family: font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--primery-font-family);
+}
+
 .list {
     list-style: none;
 }
@@ -6,47 +21,207 @@
     text-decoration: none;
 }
 
+/* ====== start header ===== */
+
+.logo {
+    font-family: var(--logo-font-family);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: var(--logo-color);
+
+}
+
 .nav-list-link {
-    font-family: 'Roboto', sans-serif;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: #212121;
+    color: var(--dark-head-color);
 }
 
 .nav-list-link:hover,
 .nav-list-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-.modal-btn {
-    font-family: 'Roboto', sans-serif;
+.mail-btn {
+    font-family: var(--primery-font-family);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14x;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     
-    color: #757575;;
+    color: var(--dark-text-color);;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-    color: #2196F3;
+.mail-btn:hover,
+.mail-btn:focus {
+    color: var(--accent-color);
 }
 
 .contact-number {
-    font-family: 'Roboto', sans-serif;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--dark-text-color);
 }
 
 .contact-number:hover,
 .contact-number:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
+
+/* ====== end header ===== */
+
+/* ====== start main ===== */
+
+.hero {
+    background-color: 2F303A;
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* color: var(--light-text-color); */
+}
+
+.main-order-btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--light-text-color);
+    background-color: #2F303A;
+}
+
+.main-order-btn:hover,
+.main-order-btn:focus {
+    color: var(--light-text-color);
+    background-color: #2196F3;
+}
+
+.peculiarities-item-list {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+        
+    color: var(--dark-head-color);
+}
+
+.peculiarities-item-description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--dark-text-color);
+}
+
+.head-description {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--dark-head-color);
+}
+
+.team-member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+        
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--dark-head-color);
+}
+
+.team-member-position {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--dark-text-color);
+}
+
+/* ====== end main ===== */
+
+/* ====== start footer ===== */
+
+.contact-list-location {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    /* color:  var(--light-text-color); */
+}
+
+.contact-list-location:hover,
+.contact-list-location:focus {
+    color: var(--accent-color);
+}
+
+.contact-list-mail {
+    font-weight: normal;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    /* color: var(--footer-contact-color); */
+}
+
+.contact-list-mail:hover,
+.contact-list-mail:focus {
+    color: var(--accent-color);
+}
+
+.contact-list-number {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    /* color: var(--footer-contact-color); */
+}
+
+.contact-list-number:hover,
+.contact-list-number:focus {
+    color: var(--accent-color);
+}
+/* ====== end footer ===== */
