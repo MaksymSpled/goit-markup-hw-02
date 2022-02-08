@@ -25,6 +25,9 @@
     --main-logo-color: #2196F3;
     --header-logo-color: #212121;
     --footer-logo-color: #ffffff; 
+    --portfolio-bg-color: #ffffff;
+    --portfolio-btn-bg-color: #F5F4FA;
+    --portfolio-accent-text-color: #ffffff;
     --main-font-family: Roboto, sans-serif;
     --logo-font-family: Raleway, sans-serif;
 }  
@@ -146,6 +149,25 @@
     letter-spacing: 0.03em;
 }
 
+.employe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color);
+}
+
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
 /* start footer */
 
 .footer {
@@ -188,3 +210,49 @@
     color:  var(--accent-color);
 }
 
+/* портфолио */
+
+.portfolio-body {
+    background-color: var(--portfolio-bg-color);
+}
+
+
+.portfolio-nav-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--main-text-color);
+    background-color: var(--portfolio-btn-bg-color);
+}
+
+.portfolio-nav-btn:hover,
+.portfolio-nav-btn:focus {
+    color: var(--portfolio-accent-text-color);
+    background-color: var(--accent-color);
+}
+
+.example-item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    
+    letter-spacing: 0.06em;
+
+    color: var(--main-text-color);
+}
+
+.app-type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.03em;
+}
