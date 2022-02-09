@@ -17,15 +17,16 @@
 /* цвет фона футер #2F303A */
 
 :root {
-    --accent-color: #2196F3;
-    --main-text-color: #212121;
+    --main-bg-color: #ffffff;
     --other-bg-color: #2F303A;
-    --main-bg-color: #757575;
-    --header-bg-color: #ffffff;
+    --main-color: #757575;
+    --accent-color: #2196F3;
     --main-logo-color: #2196F3;
     --header-logo-color: #212121;
     --footer-logo-color: #ffffff; 
-    --portfolio-bg-color: #ffffff;
+    --main-title-text-color: #ffffff;
+    --main-text-color: #212121;
+    --about-team-bg-color: #F5F4FA;
     --portfolio-btn-bg-color: #F5F4FA;
     --portfolio-accent-text-color: #ffffff;
     --main-font-family: Roboto, sans-serif;
@@ -41,17 +42,14 @@
 }
 
 .body {
-    background-color: #F5F4FA;
-    color: var(--main-bg-color);
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
     font-family: var(--main-font-family);
 }
 
-.header {
-    background-color: var(--header-bg-color);
-}
+
 .logo {
     font-family: var(--logo-font-family);
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -87,7 +85,6 @@
 }
 
 .main-title {
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -96,7 +93,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--main-title-text-color);
 }
 
 .main-order-btn {
@@ -149,6 +146,10 @@
     letter-spacing: 0.03em;
 }
 
+.about-team {
+    background-color: var(--about-team-bg-color);
+}
+
 .employe {
     font-weight: 500;
     font-size: 16px;
@@ -180,7 +181,6 @@
 
 .contact-list-location {
     font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
 
@@ -196,7 +196,6 @@
 
 .contact-footer {
     font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     
@@ -212,14 +211,7 @@
 
 /* портфолио */
 
-.portfolio-body {
-    background-color: var(--portfolio-bg-color);
-}
-
-
 .portfolio-nav-btn {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -238,7 +230,6 @@
 }
 
 .example-item {
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -249,8 +240,6 @@
 }
 
 .app-type {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 
